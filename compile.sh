@@ -1,0 +1,1 @@
+g++ -o example/cdt *.cpp observables/*.cpp
