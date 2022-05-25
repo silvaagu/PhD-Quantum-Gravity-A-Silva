@@ -1,0 +1,9 @@
+lambda			0.693147
+targetVolume	125000
+slices			134
+sphere			false
+seed			123
+fileID			rici-125000-134-123
+measurements	1000
+geom_in			0
+geom_out		example/geom/tmp2.cdt
