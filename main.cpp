@@ -2,7 +2,6 @@
 
 using namespace std;
 
-#include "funcionsuma.hpp"
 #include "pool.hpp"
 #include "bag.hpp"
 #include "config.hpp"
