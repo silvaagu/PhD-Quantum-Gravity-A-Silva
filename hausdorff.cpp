@@ -13,7 +13,7 @@ void Hausdorff::process() {
         tmp += std::to_string(s1.size());
         tmp += " ";
     }
-	tmp.pop_back();
+	tmp.pop_back(); // Other comment
 
     output = tmp;
 }
