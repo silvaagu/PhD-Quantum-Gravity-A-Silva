@@ -9,7 +9,8 @@
 class IsotropyCurvatureDual : public Observable {
 public:
 	IsotropyCurvatureDual(std::string id, std::vector<int> epsilons) : Observable(id), epsilons(epsilons) { name = "IsotropyMeasureCurvatureDual"; } //para crear una clase de Ricci hay que darle los readios de las esferas
-
+    std::vector<bool> doneL;
+    std::vector<bool> triangleL;
 	void process();
 
 private:

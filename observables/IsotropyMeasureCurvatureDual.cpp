@@ -61,15 +61,15 @@ std::vector<std::vector<double>> IsotropyCurvatureDual::DirectionalAverageSphere
     std::vector<double> TimeLikedirectionaldistances;
     std::vector<std::vector<double>> directionaldistancesSLBounds;
 
-    std::vector<Triangle::Label> sphere1=sphereDual(p1, epsilon);
-    for(auto p2 : sphere1){
-//        doneL.resize(0); //I delete the memory of this vector in case it is storing more information that it should
-//        triangleL.resize(0);
-//        doneL.resize(vmaxx + 1, false); //array de verdaderos o falsos
-//        triangleL.resize(vmaxx + 1, false);
-        std::vector<bool> doneL(vmaxx + 1, false); //array de verdaderos o falsos
-        std::vector<bool> triangleL(vmaxx + 1, false);
-        auto s1 = sphere1; //crea esfera centrada en p1
+
+    for(auto p2 : sphereDual(p1, epsilon)){
+//        std::vector<bool> doneL; //array de verdaderos o falsos
+//        std::vector<bool> triangleL;
+        doneL.resize(0); //I delete the memory of this vector in case (for some reason) it is storing more information that it should
+        triangleL.resize(0);
+        doneL.resize(vmaxx + 1, false); //array de verdaderos o falsos
+        triangleL.resize(vmaxx + 1, false);
+        auto s1 = sphereDual(p1, epsilon); //crea esfera centrada en p1
         int t1 = p1->dualtime; // me fijo el tiempo del centro de la esfera
         auto s2 = sphereDual(p2, epsilon); // crea una esfera al rededor de ese punto
         int t2 = p2->dualtime; // me fijo el tiempo del centro de la siguiente esfera
@@ -84,7 +84,7 @@ std::vector<std::vector<double>> IsotropyCurvatureDual::DirectionalAverageSphere
         //tmax = (t1 + 5 * std::max(epsilon, 2) / 2 + 1) % Universe::nSlices;
         //tmin = (t1 - (5 * std::max(epsilon, 2) / 2 + 1) + Universe::nSlices) % Universe::nSlices;
 
-        assert(6 * epsilon + 1 < Universe::nSlices); // me fijo que el radio que uso no supere la distancia máxima permitida en una topología toroidal
+        assert(3 * epsilon + 1 < Universe::nSlices); // me fijo que el radio que uso no supere la distancia máxima permitida en una topología toroidal
 
         std::vector<int> distanceList; // armo una lista de distancias entre esferas
 
@@ -140,6 +140,8 @@ std::vector<std::vector<double>> IsotropyCurvatureDual::DirectionalAverageSphere
                 if (countdown == 0) break; // salgo si ya esta
             }
             assert(countdown == 0); // chequeo que ya mire todos los puntos, sino hubo problemas
+            thisDepth.clear();
+            nextDepth.clear();
         }
         //auto t2 = high_resolution_clock::now();
 
@@ -150,15 +152,16 @@ std::vector<std::vector<double>> IsotropyCurvatureDual::DirectionalAverageSphere
         double averageDistance = static_cast<double>(distanceSum)/static_cast<double>(epsilon*distanceList.size()); //distanceList.size() es la cantidad de vertices de una esfera*la cantidad de vertices de la otra. la cantidad de vértices en el medio, se obtiene simlemente multiplicando por el radio(numero de pasos hasta llegar a cada vertice. Asi se obtiene N1(epsilon)*N2(epsilon), de ambas esferas
 
         directionaldistances.push_back(averageDistance);
-//        SpaceLikedirectionaldistances.push_back(averageDistance); //les pongo lo mismo solo para poder analizar mas facil, porque no puedo separar todavía en SL y TL
-//        TimeLikedirectionaldistances.push_back(averageDistance); //les pongo lo mismo solo para poder analizar mas facil, porque no puedo separar todavía en SL y TL
-        if(t1==t2){
-            SpaceLikedirectionaldistances.push_back(averageDistance);
-        }
-        if((abs(t1-t2)==epsilon) || (abs(t2-t1)==T-epsilon) ){
-            TimeLikedirectionaldistances.push_back(averageDistance);
-        }
-
+        SpaceLikedirectionaldistances.push_back(averageDistance); //les pongo lo mismo solo para poder analizar mas facil, porque no puedo separar todavía en SL y TL
+        TimeLikedirectionaldistances.push_back(averageDistance); //les pongo lo mismo solo para poder analizar mas facil, porque no puedo separar todavía en SL y TL
+//        if(t1==t2){
+//            SpaceLikedirectionaldistances.push_back(averageDistance);
+//        }
+//        if((abs(t1-t2)==epsilon) || (abs(t2-t1)==T-epsilon) ){
+//            TimeLikedirectionaldistances.push_back(averageDistance);
+//        }
+    s1.clear();
+    s2.clear();
     }
     directionaldistancesSLBounds.push_back(directionaldistances);
     directionaldistancesSLBounds.push_back(SpaceLikedirectionaldistances);

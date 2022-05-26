@@ -1259,3 +1259,346 @@
 	"../observable.hpp"
 	"../universe.hpp"
 
+1649699504 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\link.cpp
+	"link.hpp"
+	"vertex.hpp"
+	"triangle.hpp"
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\link.hpp
+	"pool.hpp"
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\pool.hpp
+	<cstdio>
+	<array>
+	<cassert>
+	<random>
+	<string>
+	<typeinfo>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\vertex.hpp
+	"pool.hpp"
+
+1649699504 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\triangle.hpp
+	<stdio.h>
+	<cstdlib>
+	"pool.hpp"
+	"vertex.hpp"
+
+1653215608 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observable.cpp
+	<fstream>
+	<vector>
+	<algorithm>
+	"observable.hpp"
+
+1653215555 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observable.hpp
+	<string>
+	<vector>
+	"universe.hpp"
+
+1653557025 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\universe.hpp
+	<vector>
+	<random>
+	<iostream>
+	<fstream>
+	<unordered_map>
+	"vertex.hpp"
+	"link.hpp"
+	"triangle.hpp"
+	"pool.hpp"
+	"bag.hpp"
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\bag.hpp
+	<cassert>
+	<random>
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\hausdorff.cpp
+	<vector>
+	<string>
+	"hausdorff.hpp"
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\hausdorff.hpp
+	<string>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\hausdorff_dual.cpp
+	<string>
+	<vector>
+	"hausdorff_dual.hpp"
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\hausdorff_dual.hpp
+	<string>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1653556422 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\homogeneitymeasurecoordinationnumber.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"HomogeneityMeasureCoordinationNumber.hpp"
+	<chrono>
+
+1653219501 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\homogeneitymeasurecoordinationnumber.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurecurvature.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"IsotropyMeasureCurvature.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurecurvature.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1653556422 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurecurvaturedual.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"IsotropyMeasureCurvatureDual.hpp"
+	<chrono>
+	<cstdlib>
+
+1653550909 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurecurvaturedual.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1653556422 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurecurvatureslbounds.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"IsotropyMeasureCurvatureSLBounds.hpp"
+	<chrono>
+	<cstdlib>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurecurvatureslbounds.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurecurvatureslboundsdual.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"IsotropyMeasureCurvatureSLBoundsDual.hpp"
+	<chrono>
+	<cstdlib>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurecurvatureslboundsdual.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurevolume.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"IsotropyMeasureVolume.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\isotropymeasurevolume.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\maxcnum.cpp
+	"maxcnum.hpp"
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\maxcnum.hpp
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"ricci.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci_dual.cpp
+	<unordered_map>
+	<algorithm>
+	<string>
+	<vector>
+	"ricci_dual.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci_dual.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci_dual_int.cpp
+	<unordered_map>
+	<algorithm>
+	<string>
+	<vector>
+	"ricci_dual_int.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci_dual_int.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci_hist.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"ricci_hist.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci_hist.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci_int.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"ricci_int.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricci_int.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\riccicorrelator.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"riccicorrelator.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\riccicorrelator.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\riccih.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"riccih.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\riccih.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricciv.cpp
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	"ricciv.hpp"
+	<chrono>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\ricciv.hpp
+	<string>
+	<vector>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\volume_profile.cpp
+	<string>
+	"volume_profile.hpp"
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\observables\volume_profile.hpp
+	<string>
+	"../observable.hpp"
+	"../universe.hpp"
+
+1649699505 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\simulation.cpp
+	"simulation.hpp"
+	<vector>
+
+1649699505 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\simulation.hpp
+	<random>
+	<vector>
+	"universe.hpp"
+	"observable.hpp"
+
+1649699504 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\triangle.cpp
+	"triangle.hpp"
+
+1653557076 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\universe.cpp
+	"universe.hpp"
+
+1649699504 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\vertex.cpp
+	"vertex.hpp"
+	"triangle.hpp"
+
+1653557025 source:c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\main.cpp
+	<iostream>
+	"pool.hpp"
+	"bag.hpp"
+	"config.hpp"
+	"vertex.hpp"
+	"triangle.hpp"
+	"link.hpp"
+	"universe.hpp"
+	"observable.hpp"
+	"simulation.hpp"
+	"observables/volume_profile.hpp"
+	"observables/hausdorff.hpp"
+	"observables/hausdorff_dual.hpp"
+	"observables/ricci.hpp"
+	"observables/ricci_dual.hpp"
+	"observables/riccih.hpp"
+	"observables/ricciv.hpp"
+	"observables/ricci_hist.hpp"
+	"observables/ricci_int.hpp"
+	"observables/ricci_dual_int.hpp"
+	"observables/maxcnum.hpp"
+	"observables/riccicorrelator.hpp"
+	"observables/IsotropyMeasureCurvature.hpp"
+	"observables/IsotropyMeasureVolume.hpp"
+	"observables/IsotropyMeasureCurvatureSLBounds.hpp"
+	"observables/IsotropyMeasureCurvatureSLBoundsDual.hpp"
+	"observables/IsotropyMeasureCurvatureDual.hpp"
+	"observables/HomogeneityMeasureCoordinationNumber.hpp"
+
+1649699504 c:\users\aguus\onedrive\escritorio\phd quantum gravity - radboud\phd-quantum-gravity-a-silva\config.hpp
+	<fstream>
+	<string>
+	<unordered_map>
+	<cassert>
+

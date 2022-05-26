@@ -2,6 +2,7 @@
 #include "universe.hpp"
 
 int Universe::nSlices = 0;
+int Universe::totalVolume = 0;
 std::vector<int> Universe::sliceSizes;
 bool Universe::sphere = false;
 bool Universe::imported = false;
@@ -18,15 +19,14 @@ std::vector<std::vector<Triangle::Label>> Universe::triangleNeighbors;
 std::vector<std::vector<Link::Label>> Universe::vertexLinks;
 std::vector<std::vector<Link::Label>> Universe::triangleLinks;
 
-void Universe::create(int nSlices_) {
+void Universe::create(int nSlices_,int totalVolume_) {
 	nSlices = nSlices_;
+	totalVolume = totalVolume_;
 	initialize();
 }
 
 void Universe::initialize() {
-//	int w = 800/nSlices;  // width of the initial strip. Can be adjusted for thermalization purposes - unclear what the 'optimal' value is.
-//	int w = 10; // ancho inicial para pruebas pequeñas
-    int w = 125000/nSlices; // I think the ideal number to start is the target volume divided by the number of slices
+    int w = totalVolume/nSlices; // I think the ideal number to start is the target volume divided by the number of slices
 	int t = nSlices;
 
 	std::vector<Vertex::Label> initialVertices(w*t);

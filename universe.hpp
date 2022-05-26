@@ -18,6 +18,7 @@
 class Universe {
 public:
 	static int nSlices; // numero de slices
+	static int totalVolume; // target volume
 	static std::vector<int> sliceSizes; // vector con tamaño de cada slice
 	static bool sphere; // si es esfera o no
 	static bool imported; // si viene algo importado, o no
@@ -28,7 +29,7 @@ public:
 
 	static void initialize();
 
-	static void create(int n_slices);
+	static void create(int n_slices,int total_volume);
 
 	// moves
 	static void insertVertex(Triangle::Label t);
