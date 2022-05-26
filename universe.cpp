@@ -26,6 +26,7 @@ void Universe::create(int nSlices_,int totalVolume_) {
 }
 
 void Universe::initialize() {
+
     int w = totalVolume/nSlices; // I think the ideal number to start is the target volume divided by the number of slices
 	int t = nSlices;
 
