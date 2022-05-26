@@ -1,3 +1,11 @@
+# Code::Blocks files
 *.cbp
-example/config.dat
+*.depend
+*.layout
 bin
+obj
+
+# Compilation/data files
+example/*
+!example/config.dat
+*.o
