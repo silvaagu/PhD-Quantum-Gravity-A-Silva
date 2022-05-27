@@ -1,0 +1,11 @@
+# Code::Blocks files
+*.cbp
+*.depend
+*.layout
+bin
+obj
+
+# Compilation/data files
+example/*
+!example/config.dat
+*.o
