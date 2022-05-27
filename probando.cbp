@@ -32,8 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="ImplementacionSuma.cpp" />
 		<Unit filename="bag.hpp" />
 		<Unit filename="config.hpp" />
+		<Unit filename="hausdorff_dual.hpp" />
 		<Unit filename="link.cpp" />
 		<Unit filename="link.hpp" />
 		<Unit filename="main.cpp" />
