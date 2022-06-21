@@ -29,12 +29,15 @@ using namespace std;
 #include "observables/IsotropyMeasureCurvatureSLBoundsDual.hpp"
 #include "observables/IsotropyMeasureCurvatureDual.hpp"
 #include "observables/HomogeneityMeasureCoordinationNumber.hpp"
+#include "observables/FullDistributionCoordinationNumber.hpp"
+#include "observables/HomogeneityMeasureQRC.hpp"
+#include "observables/HomogeneityMeasureHausdorffDimension.hpp"
 
 
 
 int main(int argc, const char * argv[]) {
 
-    std::vector<std::vector<double>> simulations={{0.693147,50000,183,123,30000},{0.693147,90000,183,123,30000},{0.693147,150000,183,123,30000},{0.693147,350000,183,123,30000},{0.693147,600000,243,123,30000}};
+    std::vector<std::vector<double>> simulations={{0.693147,50000,65,123,1000},{0.693147,75000,90,123,1000},{0.693147,100000,110,123,1000},{0.693147,125000,134,123,1000}}; //{0.693147,50000,183,123,30000},{0.693147,90000,183,123,30000},{0.693147,150000,183,123,30000},{0.693147,350000,183,123,30000},{0.693147,600000,243,123,30000}
     //{lambda,targetVolume,slices,seed,measurements}
 
     for(auto simdata : simulations){
@@ -72,13 +75,13 @@ int main(int argc, const char * argv[]) {
     //	Simulation::addObservable(ric);
 
         ////////////ACA MIDO ISOTROPÍA EN LA TRIANGULACION////////////////
-        int ricMax = ((slices-2)/6); // numero maximo para el radio de las esferas para medir la curvatura de ricci
-        std::vector<int> vric(ricMax);
-        for (int i = 0; i < ricMax; i++) {
-            vric.at(i) = i + 1;
-        }
-        IsotropyCurvatureSLBounds isocurvSLB(fID, vric);
-        Simulation::addObservable(isocurvSLB);
+//        int ricMax = ((slices-2)/6); // numero maximo para el radio de las esferas para medir la curvatura de ricci
+//        std::vector<int> vric(ricMax);
+//        for (int i = 0; i < ricMax; i++) {
+//            vric.at(i) = i + 1;
+//        }
+//        IsotropyCurvatureSLBounds isocurvSLB(fID, vric);
+//        Simulation::addObservable(isocurvSLB);
 
         //ahora uso lo mismo para medir los la isotropía a partir de las areas de esferas
     //    IsotropyVolume isovol(fID, vric);
@@ -119,6 +122,16 @@ int main(int argc, const char * argv[]) {
 
     /////////////////////// ACA MIDO HOMOGENEIDAD EN LA TRIANGULAICON /////////////////////
 
+//        int radmax = ((slices-2)/4); // numero maximo para el radio de las esferas para medir homogeneity
+//    //	int ricMax = (2);
+//        std::vector<int> vrad(radmax);
+//        for (int i = 0; i < radmax; i++) {
+//            vrad.at(i) = i + 1;
+//        }
+//
+//        HomogeneityCoordinationNumber HomoCoord(fID, vrad);
+//        Simulation::addObservable(HomoCoord);
+
         int radmax = ((slices-2)/4); // numero maximo para el radio de las esferas para medir homogeneity
     //	int ricMax = (2);
         std::vector<int> vrad(radmax);
@@ -126,12 +139,36 @@ int main(int argc, const char * argv[]) {
             vrad.at(i) = i + 1;
         }
 
-        HomogeneityCoordinationNumber HomoCoord(fID, vrad);
-        Simulation::addObservable(HomoCoord);
+        HomogeneityHausdorffDimension HomoHD(fID, vrad);
+        Simulation::addObservable(HomoHD);
+
+//        int radmax = ((slices-2)/6); // numero maximo para el radio de las esferas para medir homogeneity
+//    //	int ricMax = (2);
+//        std::vector<int> vrad(radmax);
+//        for (int i = 0; i < radmax; i++) {
+//            vrad.at(i) = i + 1;
+//        }
+//
+//        HomogeneityQRC HomoQRC(fID, vrad);
+//        Simulation::addObservable(HomoQRC);
+
+
 
     ////////////// FIN HOMOGENEIDAD EN LA TRIANGUALCION ///////////////
 
+    ////////////// ACA MIDO LA FULLDISTRIBUTIONCoordinationnumber P(q,r) EN LA TRIANGUALCION ///////////////
+//        int radmax = ((slices-2)/4); // numero maximo para el radio de las esferas para medir homogeneity
+//    //	int ricMax = (2);
+//        std::vector<int> vrad(radmax);
+//        for (int i = 0; i < radmax; i++) {
+//            vrad.at(i) = i + 1;
+//        }
+//
+//        FullDistributionCoordinationNumber FCND(fID, vrad,targetVolume,slices); // for observables that create large files it is necessary to pass volume and number of slices too
+//        Simulation::addObservable(FCND);
 
+
+    ////////////// FIN FULLDISTRIBUTIONCoordinationnumber P(q,r) EN LA TRIANGUALCION ///////////////
 
         //ric.clear();
         //Simulation::prepare();
