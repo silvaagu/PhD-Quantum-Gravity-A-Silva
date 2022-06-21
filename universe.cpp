@@ -26,7 +26,8 @@ void Universe::create(int nSlices_,int totalVolume_) {
 }
 
 void Universe::initialize() {
-
+//	int w = 800/nSlices;  // width of the initial strip. Can be adjusted for thermalization purposes - unclear what the 'optimal' value is.
+//	int w = 10; // ancho inicial para pruebas pequeñas
     int w = totalVolume/nSlices; // I think the ideal number to start is the target volume divided by the number of slices
 	int t = nSlices;
 

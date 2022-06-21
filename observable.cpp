@@ -7,23 +7,25 @@
 std::default_random_engine Observable::rng(0);  // TODO(JorenB): seed properly
 
 void Observable::write() {
-    std::string filename = data_dir + name + "-" + identifier +extension;
+    if(output!="The file is being written inside the process function"){ // FOR LARGE FILES IT IS NECESSARY TO WRITE THE FILES WHILE MESURING, BECAUSE THERE IS NO MEMORY ENOUGH TO STORE THE FILES
+        std::string filename = data_dir + name + "-" + identifier +extension;
 
-	std::ifstream infile(filename);
-	if (!infile.good()) {
-		printf("output file deleted\n");
-		printf("Creating new File\n");
-		clear();
-	}
-	infile.close();
+        std::ifstream infile(filename);
+        if (!infile.good()) {
+            printf("output file deleted\n");
+            printf("Creating new File\n");
+            clear();
+        }
+        infile.close();
 
-    std::ofstream file;
-    file.open(filename, std::ios::app);
+        std::ofstream file;
+        file.open(filename, std::ios::app);
 
-	assert(file.is_open());
+        assert(file.is_open());
 
-	file << output << "\n";
-	file.close();
+        file << output << "\n";
+        file.close();
+    }
 }
 
 void Observable::clear() { // basicamente lo que hace es limpiar todos los datos dentro de un archivo, si no me equivoco ????
